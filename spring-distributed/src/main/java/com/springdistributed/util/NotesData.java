@@ -32,7 +32,7 @@ public final class NotesData {
 
     public static Note findById(int id) {
         Note note = null;
-        for(Note storedNote : noteList) {
+        for (Note storedNote : noteList) {
             if(storedNote.getId() == id) {
                 note = storedNote;
             }
@@ -41,7 +41,7 @@ public final class NotesData {
     }
 
     public static void updateNote(int id, Note note) {
-        for(int i = 0 ; i < noteList.size(); i++) {
+        for (int i = 0 ; i < noteList.size(); i++) {
             if(noteList.get(i).getId() == id) {
                 noteList.get(i).setName(note.getName());
                 noteList.get(i).setDescription(note.getDescription());
